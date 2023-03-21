@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cajas Industriales</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark p-2 bg-primary">
+        <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fa fa-question-circle fa-2x"></i>
+        </a>
+    </nav>
+    <div class="container-fluid d-sm-flex justify-content-center">  
+        <div class="row" style="max-width: 450px;">
+            <div class="col-12 text-center mt-2" id="logo-header">
+                <img class="img-fluid" width="150" src="img/logo2.png" alt="Card image">
+                <h5>CAJAS INDUSTRIALES</h5>
+                <p>Seleccione una opcion de la lista</p>
+            </div>
+            <div class="accordion mb-2" id="accordionExample">
+                <div class="accordion-item border border-dark">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            CAJAS REMACHADAS
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="img/caja_remachada.PNG" class="card-img" alt="...">
+                                </div>
+                                <div class="col-6">
+                                    <div class="form">
+                                        <label for="alto" class="form-label mt-2">Alto</label>
+                                        <select name="alto" class="form-select" id="alto">
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                            <option value="500">500</option>
+                                            <option value="600">600</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800</option>
+                                            <option value="900">900</option>
+                                            <option value="1000">1000</option>
+                                        </select>
+
+                                        <label for="ancho" class="form-label">Ancho</label>
+                                        <select name="ancho" class="form-select" id="ancho">
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                            <option value="500">500</option>
+                                            <option value="600">600</option>
+                                        </select>
+
+                                        <label for="prof" class="form-label">Prof</label>
+                                        <select name="prof" class="form-select" id="prof">
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                            <option value="300">300</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>              
+                                <div class="btn-group mt-3 mb-3">
+                                    <button type="submit" class="btn btn-primary" id="enviarCuerpoRemachada">CUERPO</button>
+                                    <button type="submit" class="btn btn-success" id="enviarTapaRemachada">TAPAS</button>
+                                    <a href="cajas.html" class="btn btn-danger">RESET</a>
+                                </div>
+                                <div class="codigoRemachada">
+                                    <!-- CONTENIDO JAVASCRIPT -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border border-dark">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            CAJAS SOLDADAS
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="img/caja.png" class="card-img" alt="...">
+                                </div>
+                                <div class="col-6">
+                                    <div class="form">
+                                        <label for="altoSold" class="form-label mt-2">Alto</label>
+                                        <select name="altoSold" class="form-select" id="altoSold">
+                                            <option value="">SELECCIONE</option>
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                            <option value="500">500</option>
+                                            <option value="600">600</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800</option>
+                                            <option value="900">900</option>
+                                            <option value="1000">1000</option>
+                                            <option value="1100">1100</option>
+                                            <option value="1200">1200</option>
+                                        </select>
+
+                                        <label for="anchoSold" class="form-label">Ancho</label>
+                                        <select name="anchoSold" class="form-select" id="anchoSold">
+                                            <option value="">SELECCIONE</option>
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                            <option value="500">500</option>
+                                            <option value="600">600</option>
+                                            <option value="700">700</option>
+                                            <option value="800">800</option>
+                                            <option value="900">900</option>
+                                            <option value="1000">1000</option>
+                                        </select>
+                                        
+                                        <label for="profSold" class="form-label">Prof</label>
+                                        <select name="profSold" class="form-select" id="profSold">
+                                            <option value="">SELECCIONE</option>
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                            <option value="300">300</option>
+                                            <option value="350">350</option>
+                                            <option value="400">400</option>
+                                        </select>
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>              
+                                <div class="btn-group mt-3 mb-3">
+                                    <button type="submit" class="btn btn-primary" id="enviarCuerpoSoldado">CUERPO</button>
+                                    <a href="cajas.html" class="btn btn-danger">RESET</a>
+                                </div>
+                                <div class="codigoSoldada">
+                                    <!-- CONTENIDO JAVASCRIPT -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border border-dark">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            CAJAS DE PASO
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="img/caja_paso.png" class="card-img" alt="...">
+                                </div>
+                                <div class="col-6">
+                                    <div class="form">
+                                        <label for="alto" class="form-label mt-2">Alto</label>
+                                        <select name="alto" class="form-select" id="altoPaso">
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                        </select>
+
+                                        <label for="ancho" class="form-label">Ancho</label>
+                                        <select name="ancho" class="form-select" id="anchoPaso">
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                            <option value="250">250</option>
+                                            <option value="300">300</option>
+                                            <option value="400">400</option>
+                                        </select>
+
+                                        <label for="prof" class="form-label">Prof</label>
+                                        <select name="prof" class="form-select" id="profPaso">
+                                            <option value="100">100</option>
+                                            <option value="150">150</option>
+                                            <option value="200">200</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>              
+                                <div class="btn-group mt-3 mb-3">
+                                    <button type="submit" class="btn btn-primary" id="enviarCuerpoPaso">CUERPO Y TAPAS</button>
+                                    <a href="cajas.html" class="btn btn-danger">RESET</a>
+                                </div>
+                                <div class="codigoPaso">
+                                    <!-- CONTENIDO JAVASCRIPT -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-5">
+                <h3>Desarrollos CNC</h3>
+            </div>            
+        </div> 
+        <div class="row">
+            <nav class="col-12 navbar navbar-expand-sm bg-primary fixed-bottom text-center text-white mt-5">
+                <div class="col-4">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class="fa fa-home fa-2x"></i>                    
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-cogs fa-2x"></i>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="btn btn-primary">
+                        <i class="fa fa-key fa-2x"></i>
+                    </a>
+                </div>
+            </nav>            
+        </div>         
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cajas.js"></script>
+</body>
+
+
+<div class="offcanvas offcanvas-start" style="max-width: 200px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa fa-info-circle"></i> Informacion</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Modulo para el calculo y desarrollo de todos los tableros tipo NLAB modelo beta estandar para la troqueladora
+            amada pega 344<br><br>
+            esta compuesto en secciones que al pulsar expande las opciones para seleccionar el modelo de la pieza 
+            a calcular el CNC...
+        </div>
+    </div>
+</div>
+
+
+
+</html>

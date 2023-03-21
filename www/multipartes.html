@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tableros Beta CNC</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark p-2 sticky-top bg-primary">
+		<a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  		<i class="fa fa-question-circle fa-2x"></i>
+		</a>
+	</nav>
+	<div class="container-fluid d-sm-flex justify-content-center mt-2">	
+		<div class="row" style="max-width: 1200px;">
+			<div class="col-12 text-center my-2" id="logo-header">
+				<img class="img-fluid" width="150" src="img/logo2.png" alt="Card image">			
+				<h5>PIEZAS MULTI-PARTES</h5>
+			</div>
+			
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    UÑAS DE 6 POLOS
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/una-6-polos.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">40 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapseOne" class="card-body accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+					    	(UNAS 6 POLOS 40 PZAS)<br>
+								(LAMINA 710 X 300)<br>
+								(CLAMS 150 550)<br>
+								(T141 RE 20 X 10 90)<br>
+								(T150 RE 25.4 X 3.25 0)<br>
+								(T201 RE 110 X 5 90)<br>
+								(T203 RD 6.35)<br>
+								G92 X1000. Y1000.<br>
+								G98 X0. Y0. I139. J60.5 P4 K3<br>
+								U1<br>
+								X26. Y56. T203<br>
+								A1 G36 I2. P2 J45.25 K1<br>
+								X76. Y56.<br>
+								B1<br>
+								X126. Y56.<br>
+								B1<br>
+								V1<br>
+								U2<br>
+								X24. Y74. T141<br>
+								A2 G36 I25. P4 J9.25 K1<br>
+								X30. Y74.<br>
+								B2<br>
+								V2<br>
+								U3<br>
+								G72 X11. Y77.<br>
+								A3 G66 I132. J0. P25.4 Q3.25 T150<br>
+								G72 X11. Y107.25<br>
+								B3<br>
+								V3<br>
+								G75 W1 Q1<br>
+								G75 W2 Q3<br>
+								G75 W3 Q1<br>
+								X7.5 Y95. T201<br>
+								G36 I139. P5 J80. K2<br>
+								G50
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    UÑAS DE 3 POLOS
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/una-3-polos.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">40 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapseTwo" class="card-body accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+					    	(UNAS 3 POLOS 40 PZAS)<br>
+								(LAM 335 X 300)<br>
+								(CLAMS 100 235)<br>
+								(T141 RE 20 X 10 90)<br>
+								(T203 RD 6.35)<br>
+								(T201 RE 110 X 5 90)<br>
+								(T150 RE 25.4 X 3.25 0)<br>
+								G92 X1000. Y1000.<br>
+								G98 X0. Y0. I74. J60.5 P4 K3<br>
+								U1<br>
+								X26. Y56. T203<br>
+								A1 G36 I2. P2 J46. K1<br>
+								X51. Y56.<br>
+								B1<br>
+								V1<br>
+								U2<br>
+								X24. Y74. T141<br>
+								A2 G36 I25. P1 J10. K1<br>
+								X30. Y74.<br>
+								B2<br>
+								V2<br>
+								U3<br>
+								X26. Y79. T150<br>
+								G36 I27. P1 J31 K1<br>
+								V3<br>
+								G75 W1 Q1<br>
+								G75 W2 Q3<br>
+								G75 W3 Q1<br>
+								X7.5 Y95. T201<br>
+								G36 I64. P8 J80. K2<br>
+								G50
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    UÑAS DE 2 POLOS
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/una-2-polos.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">64 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapseTres" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+					    	(UNAS 2 POLOS 64 PZAS)<br>
+								(LAM 335 X 300)<br>
+								(CLAMS 100 235)<br>
+								(T141 RE 20 X 10 90)<br>
+								(T203 RD 6.35)<br>
+								(T201 RE 110 X 5 90)<br>
+								(T150 RE 25.4 X 3.25 0)<br>
+								G92 X1000. Y1000.<br>
+								G98 X0. Y0. I39. J60.5 P7 K3<br>
+								U1<br>
+								X30. Y56. T203<br>
+								G36 I2. P1 J45.25 K1<br>
+								V1<br>
+								U2<br>
+								X28. Y74. T141<br>
+								G36 I6. P1 J9.25 K1<br>
+								V2<br>
+								U3<br>
+								X27.7 Y78.63 T150<br>
+								G36 I6.6 P1 J30.25 K1<br>
+								V3<br>
+								G75 W1 Q1<br>
+								G75 W2 Q3<br>
+								G75 W3 Q1<br>
+								X11.5 Y95. T201<br>
+								G36 I39. P8 J80. K2<br>
+								G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    OREJAS REMACHADAS 80 MM
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">50 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse4" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+					    	(OREJAS REMACHADAS 50 PZAS)<br>
+							(LAM 845 X 340)<br>
+							(CLAMS 200 600)<br>
+							(T150 RE 25.4 X 3.25 A 0)<br>
+							(T201 RE 110 X 5 90)<br>
+							(T235 RD 12.75)<br>
+							(T336 RD 7.25)<br>
+							G92 X1000. Y1000.<br>
+							G98 X0. Y0. I85. J58.25 P9 K4<br>
+							X40. Y94. T235<br>
+							G36 I85. P9 J58.25 K4<br>
+							U1<br>
+							X10. Y59.5 T336<br>
+							G28 I30. J0. K2<br>
+							V1<br>
+							U2<br>
+							G72 X1. Y48.75<br>
+							G66 I78. J0. P25.4 Q3.25 T150<br>
+							V2<br>
+							G75 W1 Q3<br>
+							G75 W2 Q1<br>
+							X82.5 Y97. T201<br>
+							G37 I85. P8 J105. K2<br>
+							G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    OREJAS REMACHADAS 120 MM
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">40 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse5" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+					    	(OREJAS REMACHADAS 40 PZAS)<br>
+							(LAM 995 X 440)<br>
+							(CLAMS 200 700)<br>
+							(T150 RE 25.4 X 3.25 A 0)<br>
+							(T201 RE 110 X 5 90)<br>
+							(T235 RD 12.75)<br>
+							(T336 RD 7.25)<br>
+							G92 X1000. Y1000.<br>
+							G98 X0. Y0. I125. J78.25 P7 K4<br>
+							X60. Y105. T235<br>
+							G36 I125. P7 J78.25 K4<br>
+							U1<br>
+							X20. Y65. T336<br>
+							G28 I40. J0. K2<br>
+							V1<br>
+							U2<br>
+							G72 X1.5 Y48.75<br>
+							G66 I117. J0. P25.4 Q3.25 T150<br>
+							V2<br>
+							G75 W1 Q3<br>
+							G75 W2 Q1<br>
+							X122.5 Y100. T201<br>
+							G37 I125. P6 J75. K4<br>
+							G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    ZETAS 60 MM
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">40 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse6" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+				    	(ZETAS DE 60 MM)<br>
+						(LAM 1000 X 172)<br>
+						(CLAMS 200 800)<br>
+						(T201 RE 110 X 5 A 90)<br>
+						(T230 RD 5.8)<br>
+						(T336 RD 7.25)<br>
+						G92 X1000. Y1000.<br>
+						X10. Y57.5 T336<br>
+						A1 G28 I25. J0. K39.<br>
+						X10. Y162.5 T230<br>
+						B1<br>
+						X22.5 Y100. T201<br>
+						G37 I25. P39. J40. K1<br>
+						G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    BISAGRAS PLUS 30 MM
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">100 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse7" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+				    	(BISAGRAS PLUS 30 MM)<br>
+						(LAM 384 X 328)<br>
+						(CLAMS 100 200)<br>
+						(T201 RE 110 X 5 90)<br>
+						(T318 SQ 8)<br>
+						(T354 RE 12 X 2 A 0)<br>
+						G92 X1000. Y1000.<br>
+						G98 X0. Y0. I38. J28. P9 K9<br>
+						X16. Y57. T354<br>
+						A1 G36 I38. P9 J28. K9<br>
+						X38. Y69.<br>
+						B1<br>
+						U1<br>
+						X22.5 Y49. T354<br>
+						X31.5<br>
+						V1<br>
+						U2<br>
+						X8. Y66. T318<br>
+						Y59.<br>
+						X12. Y54.
+						G36 I30. P1 J18. K1
+						V2<br>
+						G75 W1 Q1<br>
+						G76 W2 Q3<br>
+						G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    BISAGRAS PLUS 50 MM
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">100 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse8" class="card-body accordion-collapse collapse mb-5" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+				    	(BISAGRAS PLUS 50 MM)<br>
+						(LAM 584 X 328)<br>
+						(CLAMS 150 450)<br>
+						(T201 RE 110 X 5 90)<br>
+						(T318 SQ 8)<br>
+						(T354 RE 12 X 2 A 0)<br>
+						G92 X1000. Y1000.<br>
+						G98 X0. Y0. I58. J28. P9 K9<br>
+						X16. Y57. T354<br>
+						A1 G36 I58. P9 J28. K9<br>
+						X58. Y69.<br>
+						B1<br>
+						U1<br>
+						X22.5 Y49. T354<br>
+						G28 I9.66 J0. K3<br>
+						V1<br>
+						U2<br>
+						X8. Y66. T318<br>
+						Y59.<br>
+						X12. Y54.
+						G36 I50. P1 J18. K1
+						V2<br>
+						G75 W1 Q1<br>
+						G76 W2 Q3<br>
+						G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-sm-3 mb-3">
+				<div class="card">
+					<div class="card-header">
+				    SEPARADORES DE RIEL
+				  </div>
+					<div class="row p-2">
+						<div class="col-6">
+			  			<img src="img/oreja-80.png" class="card-img-top border border-dark m-2" alt="...">
+						</div>
+						<div class="col-6 text-center">
+							<p class="mt-2">32 piezas</p>
+			    		<button class="btn btn-success mb-2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">VER CNC</button>
+			    	</div>
+					</div>
+				  <div id="collapse9" class="card-body accordion-collapse collapse mb-5" aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+				    <h5 class="card-title">Codigo CNC</h5>
+				    <p class="card-text">
+				    	(SEPARADORES RIEL)<br>
+						(LAM 390 X 185)<br>
+						(CLAMS 100 300)<br>
+						(T143 RD 2.4)<br>
+						(T318 SQ 8)<br>
+						(T201 RE 110 X 5 90)<br>
+						(T351 RE 20 X 2 A 0)<br>
+						G92 X1000. Y1000.<br>
+						G98 X0. Y0. I47. J35. P7 K3<br>
+						U1<br>
+						X15. Y63.5 T143<br>
+						X45.<br>
+						V1<br>
+						U2<br>
+						X22. Y53. T351<br>
+						G36 I16. P1 J21. K1<br>
+						V2<br>
+						U3<br>
+						X18. Y50. T318<br>
+						G36 I24. P1 J27. K1<br>
+						V3<br>
+						U4<br>
+						X14. Y81. T318<br>
+						X46.<br>
+						V4<br>
+						G75 W1 Q4<br>
+						G75 W2 Q1<br>
+						G76 W3 Q4<br>
+						G74 W4 Q3<br>
+						X6.5 Y100. T201<br>
+						G37 I47. P8 J35. K1<br>
+						G50<br>
+				  	</p>
+				    <a href="#" class="btn btn-primary"><i class="fa fa-save"></i> GUARDAR</a>
+				  </div>
+				</div>
+			</div>
+														
+		</div>
+			
+	</div>
+	<nav class="col-12 navbar navbar-expand-sm bg-primary sticky-bottom text-center text-white">
+		<div class="col-3">
+			<a href="index.html" class="btn btn-primary">
+				<i class="fa fa-chevron-circle-left fa-2x"></i>					
+			</a>
+		</div>
+		<div class="col-3">
+			<a href="index.html" class="btn btn-primary">
+				<i class="fa fa-home fa-2x"></i>					
+			</a>
+		</div>
+		<div class="col-3">
+			<a href="#" class="btn btn-primary">
+				<i class="fa fa-cogs fa-2x"></i>
+			</a>
+		</div>
+		<div class="col-3">
+			<a href="#" class="btn btn-primary">
+				<i class="fa fa-key fa-2x"></i>
+			</a>
+		</div>
+	</nav>
+
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="tapaSup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MULTIPARTES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		    	<p class="card-text">PROXIMAMENTE</p>  	
+		  </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="offcanvas offcanvas-start" style="max-width: 200px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa fa-info-circle"></i> Informacion</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Modulo para el calculo y desarrollo de todos las piezas y partes en multipiezas para el troquelado en la amada pega 344<br><br>
+      esta compuesto en secciones que al pulsar expande las opciones para seleccionar el modelo de la pieza 
+      a calcular el CNC...
+    </div>
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget id="com.voltbuilder.sample" xmlns="http://www.w3.org/ns/widgets" version="1.0.4">
+  <name>Proyectos</name>
+  <description>Inmetep app</description>
+  <icon src="www/img/inmetep.png" />
+  <plugin name="cordova-plugin-device" />
+  <access origin="*" />
+  <platform name="android">
+    <icon density="ldpi" src="res/iconTemplate.png" />
+    <splash src="res/splashTemplate.png" density="land-ldpi" />
+  </platform>
+</widget>

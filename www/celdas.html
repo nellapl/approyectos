@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Celdas Estandar</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark sticky-top p-2 bg-primary" style="height: 50px;">
+		<a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+			<i class="fa fa-question-circle"></i>
+		</a>
+	</nav>
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-12 text-center mt-2" id="logo-header">
+				<img class="img-fluid" width="150" src="img/logo2.png" alt="Card image">
+				<h5>CELDAS AUTOSOPORTADAS</h5>
+			</div>
+		</div>			
+		<div class="row">			
+			<div class="col-md-6 border border-dark">
+				<div class="row">
+					<div class="col-12 bg-dark text-white">
+						<p class="text-center my-2"><b>FORMULARIO DE SELECCION</b></p>
+					</div>
+
+					<div id="fotoCeldas" class="col-12">
+						<img class="img-fluid" src="img/modelos.PNG" alt="Card image">
+					</div>
+
+					<div class="col-md-4">
+						<p class="mt-2">Tipo de Nema</p>
+						<div class="form">
+							<div class="form-check">
+								<input class="form-check-input" id="nema12" type="radio" name="nema" value="12">
+								<label class="form-check-label" for="nema12">Nema 12</label>				
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" id="nema3r" type="radio" name="nema" value="3R">
+								<label class="form-check-label" for="nema3r">Nema 3R</label>				
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" id="nema4x" type="radio" name="nema" value="4X">
+								<label class="form-check-label" for="nema4x">Nema 4X</label>				
+							</div>
+
+							<label for="celda" class="form-label mt-3">Modelo</label>
+							<select name="celda" class="form-select" id="celda">
+								<option value="">Seleccione</option>
+								<option value="G14">G14</option>
+								<option value="G24">G24</option>
+								<option value="G34">G34</option>
+								<option value="G44">G44</option>
+								<option value="G54">G54</option>
+							</select>
+
+							<label for="calibre" class="form-label mt-3">Calibre</label>
+							<select name="calibre" class="form-select mb-3" id="calibre">
+								<option value="">Seleccione</option>
+								<option value="14">CALIBRE 14</option>
+							</select>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<p class="text-center mt-2">Dimensiones</p>
+						<div class="form">
+							<select name="alto" class="form-select mb-3" id="alto">
+								<option value="">Alto sin base</option>
+								<option value="2300">2300</option>
+								<option value="2100">2100</option>
+								<option value="1900">1900</option>
+								<option value="1700">1700</option>
+								<option value="1500">1500</option>
+								<option value="1300">1300</option>
+							</select>
+
+							<select name="ancho" class="form-select mb-3" id="ancho">
+								<option value="">Ancho</option>
+								<option value="1000">1000</option>
+								<option value="900">900</option>
+								<option value="800">800</option>
+								<option value="700">700</option>
+								<option value="600">600</option>
+								<option value="500">500</option>
+							</select>
+
+							<select name="prof" class="form-select mb-3" id="prof">
+								<option value="">Profundidad</option>
+								<option value="1000">1000</option>
+								<option value="900">900</option>
+								<option value="800">800</option>
+								<option value="700">700</option>
+								<option value="600">600</option>
+								<option value="500">500</option>
+								<option value="400">400</option>
+							</select>
+
+							<div class="my-3 d-grid">
+								<button id="infoCelda" class="btn btn-success btn-block">ACEPTAR</button>
+								<a href="celdas.html" class="btn btn-danger btn-block mt-2">BORRAR TODO</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<p class="mt-2">Referencia</p>
+						<img class="img-fluid" width="250" src="img/celda.PNG" alt="Card image">
+					</div>									
+				</div>
+			</div>
+
+			<div class="col-md-6 border border-dark">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-12" style="background: lightcoral;">
+							<p class="text-center my-2">TROQUELADO CNC</p>
+						</div>
+						<div class="col-12 mt-2" id="info-contenido">
+							<p>No se puede seleccionar, sin que este completo las opciones anteriores</p>
+						</div>
+						<div class="col-sm-7">
+							<select name="piezas" class="form-select" id="piezas" disabled>
+								<option value="0">Seleccione una pieza</option>
+								<option value="1">BASE METALICA</option>
+								<option value="2">TAPA SUPERIOR</option>
+								<option value="3">TAPA INFERIOR</option>
+								<option value="4">PARAL</option>
+								<option value="5">PUERTA</option>
+								<option value="6">DOBLEFONDO</option>
+								<option value="7">TAPA DESMONTABLE</option>
+								<option value="8">SOPORTE</option>
+								<option value="9">COMPLEMENTO J</option>
+							</select>
+							
+							<form class="mt-3" id="opciones-piezas">
+								
+							</form>		                            
+							<div>
+								<button id="enviarTroquelado" class="btn btn-primary my-3" disabled>GENERAR CNC</button>	
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="bg-white p-2 shadow">						
+								<p>Code CNC</p>
+								<div id="codigoPieza">
+									
+								</div>																						
+							</div>
+							<div>
+								<button class="btn btn-dark mt-3 float-end"><i class="fa fa-save"></i> EXPORTAR</button>
+							</div>
+						</div>				
+					</div>
+				</div>	
+			</div>			
+		</div>
+		
+	</div>
+	<nav class="col-12 navbar navbar-expand-sm bg-primary fixed-bottom text-center text-white mt-5" style="height: 50px;">
+		<div class="col-4">
+			<a href="index.html" class="btn btn-primary">
+				<i class="fa fa-home fa-2x"></i>					
+			</a>
+		</div>
+		<div class="col-4">
+			<a href="#" class="btn btn-primary">
+				<i class="fa fa-cogs fa-2x"></i>
+			</a>
+		</div>
+		<div class="col-4">
+			<a href="#" class="btn btn-primary">
+				<i class="fa fa-key fa-2x"></i>
+			</a>
+		</div>
+	</nav>			
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/celdas.js"></script>
+</body>
+
+<!-- Modal -->
+<div class="offcanvas offcanvas-start" style="max-width: 200px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa fa-info-circle"></i> Informacion</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<div>
+			Modulo para el calculo y desarrollo de todos los tableros tipo NLAB modelo beta estandar para la troqueladora
+			amada pega 344<br><br>
+			esta compuesto en secciones que al pulsar expande las opciones para seleccionar el modelo de la pieza 
+			a calcular el CNC...
+		</div>
+	</div>
+</div>
+
+
+
+</html>

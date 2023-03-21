@@ -1,0 +1,52 @@
+
+span{
+	font-weight: bold;
+	color: orangered;
+}
+
+img{
+	padding: 5px;
+}
+
+h3{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+body{
+	height: 100vh;
+}
+
+#logo-header h3{
+	font-size: 24px;
+}
+
+#inicio{
+	background: url("../img/fondo.png") no-repeat center;
+}
+
+
+
+.accordion-item{
+	border: 1px solid rgba(35, 65, 100, .15);
+}
+
+.accordion-button:not(.collapsed){
+	color: inherit;
+	background: rgb(35, 65, 100);
+	color: #e8e8e8;
+}
+
+.accordion-button:not(.collapsed)::after{
+	filter: brightness(0%) invert(100%);
+}
+
+.accordion-button:focus{
+	box-shadow: inherit;
+}
+
+input[type=radio]{
+	border: 1px solid #000;
+}

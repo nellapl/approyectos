@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tableros Beta CNC</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark sticky-top p-2 bg-primary">
+		<a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+			<i class="fa fa-question-circle fa-2x"></i>
+		</a>
+	</nav>
+	<div class="container-fluid d-flex justify-content-center">	
+		<div class="row" style="max-width: 450px;">
+			<div class="col-12 text-center mt-2" id="logo-header">
+				<img class="img-fluid" width="150" src="img/logo2.png" alt="Card image">
+				<h5>TABLEROS BETA</h5>
+				<p>Seleccione una opcion de la lista</p>
+			</div>
+			<div class="col-12">
+				<div class="row text-center">
+					<div class="col-4">
+						<button class="btn btn-outline-dark btn-lg mt-3 shadow" data-bs-toggle="modal" data-bs-target="#tapaSup">
+							<i class="fa fa-cogs fa-2x"></i>
+						</button>						
+						<p>Tapa<br>Superficial</p>
+					</div>
+					<div class="col-4">
+						<button class="btn btn-outline-dark btn-lg mt-3 shadow" data-bs-toggle="modal" data-bs-target="#tapaEmb110">
+							<i class="fa fa-cogs fa-2x"></i>
+						</button>						
+						<p>Ver Tapa<br>Embutida 110</p>
+					</div>
+					<div class="col-4">
+						<button class="btn btn-outline-dark btn-lg mt-3 shadow" data-bs-toggle="modal" data-bs-target="#tapaEmb100">
+							<i class="fa fa-cogs fa-2x"></i>
+						</button>					
+						<p>Ver Tapa<br>Embutida 100</p>
+					</div>
+				</div>	
+			</div>
+			<div class="accordion mb-2" id="accordionExample">
+				<div class="accordion-item border border-dark">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							CUERPOS
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="row">
+								<label class="form-label d-block mt-3">Tipo de tablero</label>
+								<div class="col-6">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="radio1"value="embutido">
+										<label class="form-check-label" for="inlineRadio1">EMBUTIDO</label>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="radio1" value="superficial">
+										<label class="form-check-label" for="inlineRadio2">SUPERFICIAL</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<label class="form-label d-block mt-2">Principal</label>
+								<div class="col-4">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="radio2" value="TIPO L">
+										<label class="form-check-label" for="inlineRadio1">TIPO L</label>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="radio2" value="TQD">
+										<label class="form-check-label" for="inlineRadio2">TQD</label>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="radio2" value="THQC">
+										<label class="form-check-label" for="inlineRadio3">THQC</label>
+									</div>
+								</div>
+								<label for="circuitos" class="form-label mt-3">Cantidad de circuitos</label>
+								<select name="circuitos" class="form-select mx-2" id="circuitos1">
+									<!-- CONTENIDO JAVASCRIPT -->
+								</select>	
+								<div class="btn-group mt-3 mb-3">
+									<button type="submit" class="btn btn-primary" id="enviarCuerpo">CALCULAR</button>
+									<a href="betas.html" class="btn btn-danger">RESETEAR</a>
+								</div>
+							</div>					
+							<div class="troquelado1 mb-2">
+								<!-- CONTENIDO JAVASCRIPT -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item border border-dark">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							CHASIS
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="row mt-2">
+								<div class="col-6 text-center" id="chasis">
+									<p>REFERENCIA</p>
+									<img src="img/chasis.PNG" class="img-thumbnail shadow" alt="--">
+								</div>
+								<div class="col-6">
+									<div class="form-check mt-1">
+										<input class="form-check-input" id="sp" type="radio" name="radio3" value="TIPO L">
+										<label class="form-check-label" for="sp">SIN PRINCIPAL</label>
+									</div>
+
+									<div class="form-check mt-1">
+										<input class="form-check-input" id="tqd1" type="radio" name="radio3" value="TQD">
+										<label class="form-check-label" for="tqd1">PRINCIPAL TQD</label>
+									</div>
+
+									<div class="form-check mt-1">
+										<input class="form-check-input" id="thqc1" type="radio" name="radio3" value="THQC">
+										<label class="form-check-label" for="thqc1">PRINCIPAL THQC</label>
+									</div>
+									<label for="circuitos" class="form-label mt-3">Cantidad de circuitos</label>
+									<select name="circuitos" class="form-select" id="circuitos3">
+										<!-- CONTENIDO JAVASCRIPT -->
+									</select>
+									<div class="col-12">							
+										<button class="w-100 btn btn-danger mt-3 shadow"  data-bs-toggle="modal" data-bs-target="#complemento">
+											<i class="fa fa-eye"></i> VER COMPLEMENTO
+										</button>
+										
+									</div>
+								</div>
+								<div class="btn-group mt-3 mb-3">
+									<button type="submit" class="btn btn-primary" id="enviarPerfil">CALCULAR</button>
+									<a href="betas.html" class="btn btn-danger">RESETEAR</a>
+								</div>
+							</div>
+							<div class="troqPerfil mb-2">
+								<!-- CONTENIDO JAVASCRIPT -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item border border-dark">
+					<h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							PUERTAS
+						</button>
+					</h2>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col-12">					
+									<label for="tipo" class="form-label mt-3">Tipo de tablero</label>
+									<select name="tipo" class="form-select" id="tipo2">
+										<option value="embutido">EMBUTIDO</option>
+										<option value="superficial">SUPERFICIAL</option>
+									</select>
+									<label for="principal" class="form-label">Principal</label>
+									<select name="principal" class="form-select" id="miSelect1">
+										<option value="NADA">SELECCIONE</option>
+										<option value="TIPO L">SIN PRINCIPAL</option>
+										<option value="TQD">PRINCIPAL TQD</option>
+										<option id="togle" value="THQC">PRINCIPAL THQC</option>
+									</select>
+									<label for="circuitos" class="form-label mt-3">Cantidad de circuitos</label>
+									<select name="circuitos2" class="form-select" id="circuitos2">						
+									</select>
+								</div>				
+								<div class="btn-group mt-3 mb-3">
+									<button type="submit" class="btn btn-primary" id="enviarPuerta">CALCULAR</button>
+									<a href="betas.html" class="btn btn-danger">RESETEAR</a>
+								</div>
+								<div class="codigoPuerta">
+									<!-- CONTENIDO JAVASCRIPT -->
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="accordion-item border border-dark">
+					<h2 class="accordion-header" id="headingFour">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							BANDEJAS
+						</button>
+					</h2>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<div class="row">
+								<div class="col-12">						
+									<label for="principal" class="form-label mt-3">Principal</label>
+									<select name="principal" class="form-select" id="miSelect">
+										<option value="0">SELECCIONE</option>
+										<option value="TIPO L">SIN PRINCIPAL</option>
+										<option value="TQD">PRINCIPAL TQD</option>
+										<option id="togle" value="THQC">PRINCIPAL THQC</option>
+									</select>
+									<label for="tipo" class="form-label mt-3">Tipo de tablero</label>
+									<select name="tipo" class="form-select" id="tipo">
+										<option value="embutido">EMBUTIDO</option>
+										<option value="superficial">SUPERFICIAL</option>
+									</select>
+									<label for="circuitos" class="form-label mt-3">Cantidad de circuitos</label>
+									<select name="circuitos" class="form-select" id="circuitos">							
+									</select>
+								</div>
+								<div class="btn-group mt-3 mb-3">
+									<button type="submit" class="btn btn-primary" id="enviarBandeja">CALCULAR</button>
+									<a href="betas.html" class="btn btn-danger">RESETEAR</a>
+								</div>		
+								<div class="troquelado">
+									<!-- CONTENIDO JAVASCRIPT -->
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 mb-5">
+				<h3>Codigos CNC</h3>
+			</div>
+		</div>
+		<nav class="col-12 navbar navbar-expand-sm bg-primary fixed-bottom text-center text-white mt-5">
+			<div class="col-4">
+				<a href="index.html" class="btn btn-primary">
+					<i class="fa fa-home fa-2x"></i>					
+				</a>
+			</div>
+			<div class="col-4">
+				<a href="#" class="btn btn-primary">
+					<i class="fa fa-cogs fa-2x"></i>
+				</a>
+			</div>
+			<div class="col-4">
+				<a href="#" class="btn btn-primary">
+					<i class="fa fa-key fa-2x"></i>
+				</a>
+			</div>
+		</nav>			
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/tableros.js"></script>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="tapaSup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">TAPA SUPERFICIAL BETA</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+					<img src="img/tapa_superficial_beta.PNG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">cajas de 450mm y profundidad de 100mm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="tapaEmb110" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">TAPA EMBUTIDA BETA</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+					<img src="img/tapa_embutida_110.PNG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">cajas de 400mm de ancho y profundidad de 110mm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="tapaEmb100" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">TAPA EMBUTIDA BETA</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+					<img src="img/tapa_embutida_100.PNG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">cajas de 400mm de ancho y profundidad de 100mm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="complemento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">COMPLEMENTO CHASIS</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="card">
+					<img src="img/complementos.PNG" class="card-img-top" alt="...">
+					<div class="card-body">
+						<p class="card-text">Para todos los chasis beta</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="offcanvas offcanvas-start" style="max-width: 200px;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas-header">
+		<h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa fa-info-circle"></i> Informacion</h5>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<div>
+			Modulo para el calculo y desarrollo de todos los tableros tipo NLAB modelo beta estandar para la troqueladora
+			amada pega 344<br><br>
+			esta compuesto en secciones que al pulsar expande las opciones para seleccionar el modelo de la pieza 
+			a calcular el CNC...
+		</div>
+	</div>
+</div>
+
+
+
+</html>
